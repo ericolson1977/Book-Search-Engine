@@ -9,11 +9,12 @@ const db = require('./config/connection');
 // const routes = require('./routes');
 
 const PORT = process.env.PORT || 3001;
-const app = express();
 const server = new ApolloServer({
   typeDefs,
   resolvers,
 });
+
+const app = express();
 
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async () => {
