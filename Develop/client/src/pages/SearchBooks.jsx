@@ -13,6 +13,7 @@ import Auth from '../utils/auth';
 import { searchGoogleBooks } from '../utils/API';
 import { saveBookIds, getSavedBookIds } from '../utils/localStorage';
 import { SAVE_BOOK } from '../utils/mutations';
+import { GET_ME } from '../utils/queries';
 
 const SearchBooks = () => {
   // create state for holding returned google api data
@@ -61,7 +62,12 @@ const SearchBooks = () => {
     }
   };
 
-  const [saveBookMutation, { error }] = useMutation(SAVE_BOOK);
+  const [saveBook, { error, data }] = useMutation(SAVE_BOOK, {
+    refetchQueries: [
+      GET_ME,
+      'me'
+    ]
+  });
 
   // create function to handle saving a book to our database
   const handleSaveBook = async (bookId) => {
@@ -76,7 +82,7 @@ const SearchBooks = () => {
     }
 
     try {
-      const { data } = await saveBookMutation({
+      const { data } = await saveBook({
         variables: { bookData: { ...bookToSave } },
       });
 
