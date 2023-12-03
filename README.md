@@ -1,31 +1,47 @@
 # Book-Search-Engine
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-<!-- GIVEN a book search engine
-WHEN I load the search engine
-THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button -->
-WHEN I click on the Search for Books menu option
-THEN I am presented with an input field to search for books and a submit button
-<!-- WHEN I am not logged in and enter a search term in the input field and click the submit button
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site -->
-<!-- WHEN I click on the Login/Signup menu option
-THEN a modal appears on the screen with a toggle between the option to log in or sign up
-WHEN the toggle is set to Signup
-THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
-WHEN the toggle is set to Login
-THEN I am presented with two inputs for an email address and a password and login button -->
-WHEN I enter a valid email address and create a password and click on the signup button
-THEN my user account is created and I am logged in to the site
-WHEN I enter my account’s email address and password and click on the login button
-THEN I the modal closes and I am logged in to the site
-WHEN I am logged in to the site
-THEN the menu options change to Search for Books, an option to see my saved books, and Logout
-WHEN I am logged in and enter a search term in the input field and click the submit button
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account
-WHEN I click on the Save button on a book
-THEN that book’s information is saved to my account
-WHEN I click on the option to see my saved books
-THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
-WHEN I click on the Remove button on a book
-THEN that book is deleted from my saved books list
-WHEN I click on the Logout button
-THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button 
+## Description
+With the goal of utilizing the most efficient technologies to handle data and user needs, I have refactored a Book search engine. The search engine was originally built using a RESTful API. I refactored so that it is now a GraphQL API built with Apollo server.
+
+When the app is loaded, the user can immediately begin searching for books. The user will be presented with a login/signup option. Once the user is full signed up or logged in, they will have the ability to save a book from the search results. They can then view all their saved books in one place. Finally, the user can delete any book from their saved list.
+
+## Table of Contents
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Credits](#credits)
+4. [Tests](#tests)
+5. [Questions](#questions)
+6. [License](#license)
+
+## Installation
+To install the necessary dependencies, run the following command:
+    
+    npm i
+
+## Usage
+https://github.com/ericolson1977/Book-Search-Engine
+
+https://ancient-brook-31714-18b44250df4b.herokuapp.com/
+
+
+
+## Credits
+Starter code provided by instruction staff. Technoligies used include:
+
+- MERN stack
+- GrapgQL
+- Apollo
+- bcrypt
+- Bootstrap
+
+## Tests
+To run tests, run the following command:
+    
+    n/a
+
+## Questions
+If you have any questions about the repo, open an issue or contact me directly at mr_tues_night@yahoo.com. You can find more of my work at [ericolson1977](https://github.com/ericolson1977).
+
+## License
+  This project is licensed under the MIT license.
