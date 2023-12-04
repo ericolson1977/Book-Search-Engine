@@ -46,8 +46,4 @@ db.once('open', () => {
 // Call the async function to start the server
 startApolloServer();
 
-// app.use(routes);
 
-// db.once('open', () => {
-//   app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`));
-// });
